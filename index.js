@@ -1,29 +1,49 @@
-const farmAnimals = 'cow horse sheep pig chicken';
+// 1) Animal sounds
+const [moo, neigh, baa, oink, cluck] = ['cow', 'horse', 'sheep', 'pig', 'chicken'];
 
-const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// 2) Animal names
+const [bessie, dolly, babe, little] = ['cow', 'sheep', 'pig', 'chicken'];
 
+// 3) Animal colors
+const [blackAndWhite, black, pink] = ['cow', 'sheep', 'pig'];
+
+// 4) Rainbow full color names
+const [red, orange, yellow, green, blue, indigo, violet] = [
+  'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'
+];
+
+// 5) Rainbow initials
+const [r, o, y, g, b, v] = ['red', 'orange', 'yellow', 'green', 'blue', 'violet'];
+
+// 6) Indigo alias
+const [indg] = ['indigo'];
+
+// 7) Muppet object
 const muppet = {
-  muppetName: 'Miss Piggy',
-  color: 'pink',
-  song: 'Never Before, Never Again',
-  job: 'Cast member of The Muppet Show',
-  partner: 'Kermit'
+  muppetName: 'Kermit',
+  color: 'green',
+  song: "Bein' Green",
+  job: 'Host of The Muppet Show',
+  partner: 'Miss Piggy'
 };
 
+const { muppetName, color, song, job, partner } = muppet;
+
+// 8) Nested muppet object
 const nestedMuppet = {
-  nestedName: 'Kermit',
-  nestedColor: 'green',
-  album: {
-    theMuppetMovie: {
-      song1: 'Rainbow Connection',
-      song2: 'Moving Right Along',
-      song3: 'Never Before, Never Again',
-      song4: 'I Hope That Something Better Comes Along',
-    },
-  },
-  nestedJob: 'Host of The Muppet Show',
-  nestedPartner: 'Miss Piggy'
+  songs: [
+    'Rainbow Connection',
+    'Moving Right Along',
+    "Bein' Green",
+    'I Hope That Something Better Comes Along'
+  ],
+  job: 'Host of The Muppet Show',
+  partner: 'Miss Piggy'
 };
+
+const { songs: [, song2, , song4], job: nestedJob, partner: nestedPartner } = nestedMuppet;
+
+
 
 // Strings
 
@@ -46,3 +66,4 @@ const nestedMuppet = {
 // 7. Use destructuring to assign all variables using the keys as the variable names
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
+
