@@ -20,14 +20,16 @@ const [indg] = ['indigo'];
 
 // 7) Muppet object
 const muppet = {
-  muppetName: 'Kermit',
-  color: 'green',
-  song: "Bein' Green",
-  job: 'Host of The Muppet Show',
-  partner: 'Miss Piggy'
+  muppetName: "Miss Piggy",
+  color: 'pink',
+  song: "Never Before, Never Again",
+  job: 'Cast member of The Muppet Show',
+  partner: "Kermit"
 };
 
-const { muppetName, color, song, job, partner } = muppet;
+const { partner, color, song, job, muppetName } = muppet;
+console.log({ muppetName, partner });
+
 
 // 8) Nested muppet object
 const nestedMuppet = {
